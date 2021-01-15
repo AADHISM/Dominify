@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --primary: #654ad0;
+  --red: #ff6347;
+  --green: #3cb371;
+  --dark: #333;
+  --light-1: #fff;
+  --light-2: #ddd;
+  --light-3: #f1f1f1;
+
+  --primary-font: "Quicksand", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--light-1);
+}
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-1);
+  transition: all 0.3s;
+}
+
+a:hover {
+  filter: brightness(70%);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Utilities */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid {
+  width: 90%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.light-1 {
+  color: var(--light-1);
+}
+
+.light-2 {
+  color: var(--light-2);
+}
+
+.light-3 {
+  color: var(--light-3);
+}
+
+.btn {
+  padding: 0.3rem 0.7rem;
+  background-color: var(--light-1);
+  border-radius: 3px;
+  color: var(--dark);
+  margin: 1rem 0;
+  border: 0;
+  outline: 0;
+}
+
+.btn-light-2 {
+  background-color: var(--light-2);
+  color: var(--dark);
+}
+
+.btn-light-3 {
+  background-color: var(--light-3);
+  color: var(--dark);
+}
+
+.btn-dark {
+  background-color: var(--dark);
+  color: var(--light-1);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--light-1);
+}
+
+.btn-red {
+  margin-top: 1rem;
+  background-color: var(--red);
+  color: var(--light-1);
+  cursor: not-allowed;
+}
+
+.btn-red:hover {
+  filter: brightness(100%);
+}
+
+.btn-green {
+  background-color: var(--green);
+  color: var(--light-1);
+}
+
+.box {
+  padding: 1rem;
+  background-color: var(--dark);
+  width: fit-content;
+  color: #fff;
+  border-radius: 36px;
+}
+
+.box-transparent {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.card {
+  background-color: var(--light-1);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 4px 4px 49px rgba(51, 51, 51, 0.5);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-family: var(--secondary-font);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* Homepage */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  min-height: 50vh;
+  background-image: url(./img/bg.svg);
+  background-attachment: fixed;
+  padding: 1rem;
+  font-family: var(--primary-font);
+  border-bottom: 3px solid var(--primary);
+}
+
+.home h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+/* Aboutpage */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 50vh;
+  background-attachment: fixed;
+  padding: 1rem;
+  font-family: var(--primary-font);
+  border-bottom: 3px solid var(--primary);
+}
+
+/* Domainpage */
+.domain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 50vh;
+  background-attachment: fixed;
+  padding: 1rem;
+  font-family: var(--primary-font);
+  border-bottom: 3px solid var(--primary);
+}
+
+.domain input {
+  padding: 0.4rem 0.7rem;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+  text-transform: lowercase;
+  transition: all 0.3s;
+}
+
+.domain input:focus {
+  border-color: var(--dark);
+}
+
+.domain .card h3 {
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  margin-top: 4rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark);
+  color: var(--light-1);
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 37.5%;
+  }
+}
