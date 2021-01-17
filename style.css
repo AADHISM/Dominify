@@ -243,10 +243,6 @@ p {
   border-color: var(--dark);
 }
 
-.domain .grid {
-  justify-items: center;
-}
-
 .domain .card h3 {
   font-family: var(--secondary-font);
   font-weight: 900;
