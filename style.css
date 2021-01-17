@@ -62,7 +62,6 @@ p {
   width: 90%;
   display: grid;
   gap: 2rem;
-  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -225,7 +224,6 @@ p {
   flex-direction: column;
   gap: 2rem;
   min-height: 50vh;
-  background-attachment: fixed;
   padding: 1rem;
   font-family: var(--primary-font);
   border-bottom: 3px solid var(--primary);
@@ -243,6 +241,10 @@ p {
 
 .domain input:focus {
   border-color: var(--dark);
+}
+
+.domain .card {
+  align-items: center;
 }
 
 .domain .card h3 {
