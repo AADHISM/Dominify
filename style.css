@@ -64,7 +64,7 @@ p {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 .primary {
