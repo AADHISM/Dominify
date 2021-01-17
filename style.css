@@ -62,8 +62,8 @@ p {
   width: 90%;
   display: grid;
   gap: 2rem;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  text-align: center;
 }
 
 .primary {
