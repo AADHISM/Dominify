@@ -244,7 +244,7 @@ p {
 }
 
 .domain .card {
-  align-items: center;
+  justify-items: center;
 }
 
 .domain .card h3 {
